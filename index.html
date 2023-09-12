@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript DOM</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <script>
+        // Create <header> element and set class
+        const headerElement = document.createElement('header');
+        headerElement.className = 'ylatunniste';
+    
+        // Create <h1> element and set text content
+        const h1Element = document.createElement('h1');
+        h1Element.textContent = 'Tämä on artikkelin otsikko';
+    
+        // Create <p> element and set text content
+        const pElement = document.createElement('p');
+        pElement.textContent = 'Ensimmäinen kappale! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error explicabo quia, magni natus minus facilis nihil tempora vitae iure accusantium ea officia quaerat laborum aliquam! Itaque non nihil vel magni!';
+    
+        // Append <h1> and <p> to <header>
+        headerElement.appendChild(h1Element);
+        headerElement.appendChild(pElement);
+    
+        // Append <header> to <body> or any other suitable parent element
+        document.body.appendChild(headerElement);
+        
+        // Create <section> element and set id
+        const sectionElement = document.createElement('section');
+        sectionElement.id = 'rinnakkain';
+    
+        // Create <p> element for section and set text content
+        const pInSection = document.createElement('p');
+        pInSection.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error explicabo quia, magni natus minus facilis nihooil tempora vitae iure accusantium ea officia quaerat laborum aliquam! Itaque non nihil vel magni!Lorem ipsum dolor sit amet consectetur adipisicing elit. Error explicabo quia, magni natus minus facilis nihil tempora vitae iure accusantium ea officia quaerat laborum aliquam! Itaque non nihil vel magni!Lorem ipsum dolor sit amet consectetur adipisicing elit. Error explicabo quia, magni natus minus facilis nihil tempora vitae iure accusantium ea officia quaerat laborum aliquam! Itaque non nihil vel magni!Lorem ipsum dolor sit amet consectetur adipisicing elit.';
+        
+    
+        // Create <img> element and set src and alt attributes
+        const img = document.createElement('img');
+        img.src = '1.gif';
+        img.alt = 'javascript_masine';
+    
+        // Append <p> to <section>
+        sectionElement.appendChild(pInSection);
+    
+        // Append <img> to <section>
+        sectionElement.appendChild(img);
+    
+        // Append <section> to the document body or any other suitable parent element
+        document.body.appendChild(sectionElement);
+    
+        // Create <footer> element
+            const footerElement = document.createElement('footer');
+
+        // Create <p> element for footer and set text content
+        const pInFooter = document.createElement('p');
+        pInFooter.textContent = '\u00A9 2023 Liudmila Pikhtina'; // \u00A9 represents the copyright symbol in Unicode
+
+        // Append <p> to <footer>
+        footerElement.appendChild(pInFooter);
+
+        // Append <footer> to the document body or any other suitable parent element
+        document.body.appendChild(footerElement);
+            
+    </script>
+</body>
+</html>
+

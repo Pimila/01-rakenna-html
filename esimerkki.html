@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Javascript-esimerkki W3chool-palvelussa</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <!-- <div id="div1"> -->
+        <!-- <p id="p1">This is a paragraph.</p> -->
+        <!-- <p id="p2">This is another paragraph.</p> -->
+    <!-- </div> -->
+    <script>
+        const runko = document.body;
+        const osa1 = document.createElement("div");
+        osa1.id = "div1";
+        runko.prepend(osa1);
+        const kappale = document.createElement("p");
+        kappale.id = "p1";
+        kappale.textContent = "Tämä on ensimmäisen kappaleen teksti.";
+        document.getElementById("div1").appendChild(kappale);
+        const kappale2 = document.createElement("p");
+        kappale2.id = "p2";
+        kappale2.textContent = "Tämä on toisen kappalen teksti.";
+        document.getElementById("div1").appendChild(kappale2);
+        const kappale3 = document.createElement("p");
+        kappale3.id = "p3";
+        kappale3.textContent = "Tämä on kolmannen kappaleen teksti";
+        document.getElementById("div1").append(kappale3);
+        
+        // const para = document.createElement("p");
+        // const node = document.createTextNode("This is new paragaph.");
+        // para.appendChild(node);
+        // const element = document.getElementById("div1");
+        // element.appendChild(para);
+    </script>
+</body>
+</html>

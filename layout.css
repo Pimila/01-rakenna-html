@@ -1,0 +1,84 @@
+html{
+    font-size: 62.5%;
+    margin: 1rem;
+    margin-right: 9rem;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}#div1{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: bisque;
+}
+p{
+    font-size: 1.8rem;
+    margin: 1rem;
+}
+h1{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+#kuvanpaikka{
+    margin: 1rem;
+}
+/* Style for the header */
+.ylatunniste {
+    border: 1px dashed black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style for the section */
+#rinnakkain {
+    border: 1px dashed black;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+/* Style for the footer */
+footer {
+    border: 1px dashed black;
+    padding: 10px;
+}
+#rinnakkain p {
+    flex: 1; /* Allow paragraph to grow and take available space */
+    padding: 10px;
+}
+
+/* Style for the image in the section */
+#rinnakkain img {
+    flex: 1; /* Allow image to grow and take available space */
+    max-width: 100%; /* Ensure image doesn't exceed container */
+    padding: 10px;
+}
+/* Reset default list styles */
+ul {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  /* Style list items */
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Style links within list items */
+  li a {
+    display: block;
+    text-decoration: none;
+    padding: 55px;
+    border: 5px solid #ccc;
+    border-radius: 25px;
+    color: #333;
+    
+  }
+  
+  /* On hover, change background and text color */
+  li a:hover {
+    background-color: #05cbe9c8;
+    color: #555;
+  }
+  
